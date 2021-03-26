@@ -1,0 +1,8 @@
+prefix=/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/install
+
+Name: m2wr_description
+Description: Description of m2wr_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

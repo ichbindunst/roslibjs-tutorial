@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_47a0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47a0f.dir/build.make CMakeFiles/cmTC_47a0f.dir/build
+make[1]: Entering directory '/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47a0f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_47a0f.dir/CheckSymbolExists.c.o   -c /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_47a0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47a0f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_47a0f.dir/CheckSymbolExists.c.o  -o cmTC_47a0f -rdynamic 
+CMakeFiles/cmTC_47a0f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_47a0f.dir/build.make:97: recipe for target 'cmTC_47a0f' failed
+make[1]: *** [cmTC_47a0f] Error 1
+make[1]: Leaving directory '/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_47a0f/fast' failed
+make: *** [cmTC_47a0f/fast] Error 2
+
+File /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17759/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17759.dir/build.make CMakeFiles/cmTC_17759.dir/build
+make[1]: Entering directory '/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17759.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_17759.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_17759
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17759.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_17759.dir/CheckFunctionExists.c.o  -o cmTC_17759 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_17759.dir/build.make:97: recipe for target 'cmTC_17759' failed
+make[1]: *** [cmTC_17759] Error 1
+make[1]: Leaving directory '/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/build/catkin_tools_prebuild/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_17759/fast' failed
+make: *** [cmTC_17759/fast] Error 2
+
+

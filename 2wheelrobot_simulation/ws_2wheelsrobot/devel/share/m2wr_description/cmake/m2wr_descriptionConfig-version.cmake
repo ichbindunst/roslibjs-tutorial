@@ -1,0 +1,1 @@
+/home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/devel/.private/m2wr_description/share/m2wr_description/cmake/m2wr_descriptionConfig-version.cmake

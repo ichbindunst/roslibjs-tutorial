@@ -1,0 +1,6 @@
+devel_space: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/devel
+install: false
+install_space: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/install
+profile: default
+source_space: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot/src
+workspace: /home/yao/roslibjs_tutorial/2wheelrobot_simulation/ws_2wheelsrobot
